@@ -1,0 +1,3 @@
+{
+  "extends": "@Migrate/config/tsconfig.base.json"
+}
