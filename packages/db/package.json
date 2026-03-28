@@ -1,5 +1,5 @@
 {
-  "name": "@Migrate/db",
+  "name": "@migrate/db",
   "type": "module",
   "exports": {
     ".": {
@@ -16,15 +16,15 @@
     "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
-    "@Migrate/env": "workspace:*",
+    "@migrate/env": "workspace:*",
     "dotenv": "catalog:",
-    "drizzle-orm": "catalog:",
+    "drizzle-orm": "^0.45.1",
     "pg": "^8.17.1",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@Migrate/config": "workspace:*",
-    "@types/pg": "catalog:",
+    "@migrate/config": "workspace:*",
+    "@types/pg": "^8.16.0",
     "drizzle-kit": "^0.31.8",
     "typescript": "^5"
   }

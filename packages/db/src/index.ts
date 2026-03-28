@@ -1,4 +1,4 @@
-import { env } from "@Migrate/env/server";
+import { env } from "@migrate/env/server";
 import { drizzle } from "drizzle-orm/node-postgres";
 
 import * as schema from "./schema";

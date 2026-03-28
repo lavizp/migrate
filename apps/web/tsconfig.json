@@ -13,7 +13,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@Migrate/ui/*": ["../../packages/ui/src/*"]
+      "@migrate/ui/*": ["../../packages/ui/src/*"]
     }
   }
 }

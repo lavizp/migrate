@@ -1,1 +1,2 @@
-@import "@Migrate/ui/globals.css";
+@import "@migrate/ui/globals.css";
+@source "../node_modules/streamdown/dist/*.js";

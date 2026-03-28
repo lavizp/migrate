@@ -1,7 +1,7 @@
-import { createContext } from "@Migrate/api/context";
-import { appRouter } from "@Migrate/api/routers/index";
-import { env } from "@Migrate/env/server";
-import { createExpressMiddleware } from "@trpc/server/adapters/express";
+import { devToolsMiddleware } from "@ai-sdk/devtools";
+import { google } from "@ai-sdk/google";
+import { env } from "@migrate/env/server";
+import { streamText, type UIMessage, convertToModelMessages, wrapLanguageModel } from "ai";
 import cors from "cors";
 import express from "express";
 
@@ -14,15 +14,20 @@ app.use(
   }),
 );
 
-app.use(
-  "/trpc",
-  createExpressMiddleware({
-    router: appRouter,
-    createContext,
-  }),
-);
-
 app.use(express.json());
+
+app.post("/ai", async (req, res) => {
+  const { messages = [] } = (req.body || {}) as { messages: UIMessage[] };
+  const model = wrapLanguageModel({
+    model: google("gemini-2.5-flash"),
+    middleware: devToolsMiddleware(),
+  });
+  const result = streamText({
+    model,
+    messages: await convertToModelMessages(messages),
+  });
+  result.pipeUIMessageStreamToResponse(res);
+});
 
 app.get("/", (_req, res) => {
   res.status(200).send("OK");

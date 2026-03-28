@@ -55,12 +55,12 @@ const DrawerLayout = () => {
         }}
       />
       <Drawer.Screen
-        name="todos"
+        name="ai"
         options={{
-          headerTitle: "Todos",
-          drawerLabel: "Todos",
+          headerTitle: "AI",
+          drawerLabel: "AI",
           drawerIcon: ({ size, color }) => (
-            <Ionicons name="checkbox-outline" size={size} color={color} />
+            <Ionicons name="chatbubble-ellipses-outline" size={size} color={color} />
           ),
         }}
       />

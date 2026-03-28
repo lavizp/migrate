@@ -1,15 +1,12 @@
-import { useQuery } from "@tanstack/react-query";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 
 import { Container } from "@/components/container";
 import { NAV_THEME } from "@/lib/constants";
 import { useColorScheme } from "@/lib/use-color-scheme";
-import { trpc } from "@/utils/trpc";
 
 export default function Home() {
   const { colorScheme } = useColorScheme();
   const theme = colorScheme === "dark" ? NAV_THEME.dark : NAV_THEME.light;
-  const healthCheck = useQuery(trpc.healthCheck.queryOptions());
 
   return (
     <Container>
@@ -17,26 +14,9 @@ export default function Home() {
         <View style={styles.content}>
           <Text style={[styles.title, { color: theme.text }]}>BETTER T STACK</Text>
 
-          <View style={[styles.card, { backgroundColor: theme.card, borderColor: theme.border }]}>
-            <View style={styles.statusRow}>
-              <View
-                style={[
-                  styles.statusIndicator,
-                  { backgroundColor: healthCheck.data ? "#10b981" : "#f59e0b" },
-                ]}
-              />
-              <View style={styles.statusContent}>
-                <Text style={[styles.statusTitle, { color: theme.text }]}>TRPC</Text>
-                <Text style={[styles.statusText, { color: theme.text, opacity: 0.7 }]}>
-                  {healthCheck.isLoading
-                    ? "Checking connection..."
-                    : healthCheck.data
-                      ? "All systems operational"
-                      : "Service unavailable"}
-                </Text>
-              </View>
-            </View>
-          </View>
+          <View
+            style={[styles.card, { backgroundColor: theme.card, borderColor: theme.border }]}
+          ></View>
         </View>
       </ScrollView>
     </Container>

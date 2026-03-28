@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Migrate",
-    "slug": "Migrate",
+    "name": "migrate",
+    "slug": "migrate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "Migrate",
+    "scheme": "migrate",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true

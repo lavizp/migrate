@@ -1,10 +1,10 @@
-import { Button } from "@Migrate/ui/components/button";
+import { Button } from "@migrate/ui/components/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@Migrate/ui/components/dropdown-menu";
+} from "@migrate/ui/components/dropdown-menu";
 import { Moon, Sun } from "lucide-react";
 
 import { useTheme } from "@/components/theme-provider";

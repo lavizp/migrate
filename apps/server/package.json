@@ -10,21 +10,21 @@
     "start": "bun run dist/index.mjs"
   },
   "dependencies": {
-    "@Migrate/api": "workspace:*",
-    "@Migrate/db": "workspace:*",
-    "@Migrate/env": "workspace:*",
-    "@hono/trpc-server": "^0.4.0",
-    "@trpc/server": "catalog:",
+    "@ai-sdk/devtools": "^0.0.2",
+    "@ai-sdk/google": "^3.0.1",
+    "@migrate/db": "workspace:*",
+    "@migrate/env": "workspace:*",
+    "ai": "catalog:",
     "cors": "^2.8.5",
     "dotenv": "catalog:",
     "express": "^5.1.0",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@Migrate/config": "workspace:*",
+    "@migrate/config": "workspace:*",
     "@types/bun": "catalog:",
     "@types/cors": "^2.8.17",
-    "@types/express": "catalog:",
+    "@types/express": "^5.0.1",
     "tsdown": "^0.16.5",
     "typescript": "^5"
   }

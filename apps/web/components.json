@@ -13,8 +13,8 @@
   "iconLibrary": "lucide",
   "aliases": {
     "components": "@/components",
-    "utils": "@Migrate/ui/lib/utils",
-    "ui": "@Migrate/ui/components",
+    "utils": "@migrate/ui/lib/utils",
+    "ui": "@migrate/ui/components",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },

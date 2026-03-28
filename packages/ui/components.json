@@ -12,11 +12,11 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "@Migrate/ui/components",
-    "utils": "@Migrate/ui/lib/utils",
-    "hooks": "@Migrate/ui/hooks",
-    "lib": "@Migrate/ui/lib",
-    "ui": "@Migrate/ui/components"
+    "components": "@migrate/ui/components",
+    "utils": "@migrate/ui/lib/utils",
+    "hooks": "@migrate/ui/hooks",
+    "lib": "@migrate/ui/lib",
+    "ui": "@migrate/ui/components"
   },
   "menuColor": "default",
   "menuAccent": "subtle",

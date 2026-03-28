@@ -1,5 +1,5 @@
 {
-  "name": "@Migrate/env",
+  "name": "@migrate/env",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -14,7 +14,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@Migrate/config": "workspace:*",
+    "@migrate/config": "workspace:*",
     "@types/bun": "catalog:",
     "typescript": "^5"
   }

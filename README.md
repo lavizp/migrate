@@ -1,6 +1,6 @@
-# Migrate
+# migrate
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Express, TRPC, and more.
+This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Express, and more.
 
 ## Features
 
@@ -11,7 +11,6 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 - **TailwindCSS** - Utility-first CSS for rapid UI development
 - **Shared UI package** - shadcn/ui primitives live in `packages/ui`
 - **Express** - Fast, unopinionated web framework
-- **tRPC** - End-to-end type-safe APIs
 - **Bun** - Runtime environment
 - **Drizzle** - TypeScript-first ORM
 - **PostgreSQL** - Database engine
@@ -67,7 +66,7 @@ npx shadcn@latest add accordion dialog popover sheet table -c packages/ui
 Import shared components like this:
 
 ```tsx
-import { Button } from "@Migrate/ui/components/button";
+import { Button } from "@migrate/ui/components/button";
 ```
 
 ### Add app-specific blocks
@@ -77,14 +76,13 @@ If you want to add app-specific blocks instead of shared primitives, run the sha
 ## Project Structure
 
 ```
-Migrate/
+migrate/
 ├── apps/
 │   ├── web/         # Frontend application (React + TanStack Router)
 │   ├── native/      # Mobile application (React Native, Expo)
-│   └── server/      # Backend API (Express, TRPC)
+│   └── server/      # Backend API (Express)
 ├── packages/
 │   ├── ui/          # Shared shadcn/ui components and styles
-│   ├── api/         # API layer / business logic
 │   └── db/          # Database schema & queries
 ```
 

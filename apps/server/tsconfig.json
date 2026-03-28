@@ -1,5 +1,5 @@
 {
-  "extends": "@Migrate/config/tsconfig.base.json",
+  "extends": "@migrate/config/tsconfig.base.json",
   "compilerOptions": {
     "composite": true,
     "outDir": "dist",
