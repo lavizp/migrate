@@ -15,16 +15,23 @@
     "@migrate/db": "workspace:*",
     "@migrate/env": "workspace:*",
     "ai": "catalog:",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.1",
     "express": "^5.1.0",
+    "googleapis": "^150.0.1",
+    "groq-sdk": "^1.1.2",
+    "jsonwebtoken": "^9.0.2",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@migrate/config": "workspace:*",
     "@types/bun": "catalog:",
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
     "tsdown": "^0.16.5",
     "typescript": "^5"
   }
