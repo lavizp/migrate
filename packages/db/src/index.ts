@@ -8,3 +8,5 @@ export function createDb() {
 }
 
 export const db = createDb();
+export const { users, credentials } = schema;
+export type { User, NewUser, Credential, NewCredential } from "./schema";
