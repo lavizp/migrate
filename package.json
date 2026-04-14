@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@migrate/env": "workspace:*",
+    "@xyflow/react": "^12.10.2",
     "dotenv": "catalog:",
     "zod": "catalog:"
   },
